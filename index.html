@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tokyo Shrine</title>
+  <!-- Google Font with a Japanese touch -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:400,700&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset and base styles */
+    body, h1, h2, p, a {
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Serif JP', serif;
+      color: #333;
+    }
+    body {
+      background: #f8f8f8;
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+    }
+    
+    /* Header with shrine-inspired background */
+    header {
+      background: url('https://source.unsplash.com/1600x900/?shrine,Japan') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 0 20px;
+    }
+    header h1 {
+      font-size: 4rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+    header p {
+      font-size: 1.5rem;
+      margin: 20px 0;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    }
+    .btn {
+      background: #d33;
+      color: #fff;
+      padding: 12px 30px;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #b00;
+    }
+    
+    /* Content sections */
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+    .section {
+      margin-bottom: 60px;
+    }
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #555;
+    }
+    .section p {
+      font-size: 1.1rem;
+      text-align: center;
+    }
+    
+    /* Footer styling */
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <header>
+    <h1>Tokyo Shrine</h1>
+    <p>Where tradition meets taste</p>
+    <a href="#about" class="btn">Learn More</a>
+  </header>
+  
+  <!-- Main Content -->
+  <div class="content">
+    <!-- About Section -->
+    <section id="about" class="section">
+      <h2>Our Story</h2>
+      <p>
+        At Tokyo Shrine, we invite you into a sanctuary of authentic Japanese culinary tradition. Inspired by ancient shrines and the serene beauty of Japan, every detail is crafted with reverence.
+      </p>
+    </section>
+    
+    <!-- Menu Section -->
+    <section id="menu" class="section">
+      <h2>Our Cuisine</h2>
+      <p>
+        Savor the art of Japanese dining—from delicate sushi to hearty ramen. Our menu is a tribute to timeless flavors and meticulous craftsmanship.
+      </p>
+    </section>
+    
+    <!-- Location Section -->
+    <section id="location" class="section">
+      <h2>Visit Us</h2>
+      <p>
+        Shibuya Crossing, Shibuya, Tokyo, Japan
+      </p>
+    </section>
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Tokyo Shrine. All rights reserved.</p>
+  </footer>
+  
+  <!-- Simple Smooth Scrolling Script -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
